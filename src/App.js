@@ -1,8 +1,8 @@
-import './App.css'
-
 import {v4} from 'uuid'
 
 import {Component} from 'react'
+
+import './App.css'
 
 const colorList = ['yellow', 'orange', 'green', 'brown', 'blue']
 
@@ -82,7 +82,7 @@ class App extends Component {
       searchInput,
     } = this.state
     let {isTrue} = this.state
-    const filteredList = latestList.map(each =>
+    const filteredList= latestList.filter(each =>
       each.websiteName.toLowerCase().includes(searchInput.toLowerCase()),
     )
     if (filteredList.length === 0) {
