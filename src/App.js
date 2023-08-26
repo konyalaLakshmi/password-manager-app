@@ -215,7 +215,7 @@ class App extends Component {
                   </div>
                   <div className="li-items">
                     <p className="website">{each.websiteName}</p>
-                    <p className="userName">{each.userName}</p>
+                    <p className="website">{each.userName}</p>
                     {!isShow && (
                       <img
                         src="https://assets.ccbp.in/frontend/react-js/password-manager-stars-img.png"
@@ -223,7 +223,7 @@ class App extends Component {
                         className="stars-image"
                       />
                     )}
-                    {isShow && <p className="password">{each.Password}</p>}
+                    {isShow && <p className="website">{each.Password}</p>}
                   </div>
                   <button
                     className="dButton"
