@@ -82,10 +82,10 @@ class App extends Component {
       searchInput,
     } = this.state
     let {isTrue} = this.state
-    const filteredList= latestList.filter(each =>
+    const newList= latestList.filter(each =>
       each.websiteName.toLowerCase().includes(searchInput.toLowerCase()),
     )
-    if (filteredList.length === 0) {
+    if (newList.length === 0) {
       isTrue = false
     } else {
       isTrue = true
@@ -165,7 +165,7 @@ class App extends Component {
           <div className="lower-inner">
             <div className="count-container">
               <h1 className="h1">Your Passwords</h1>
-              <div className="count">{filteredList.length}</div>
+              <div className="count">{newList.length}</div>
             </div>
             <div className="search-container">
               <img
@@ -207,8 +207,8 @@ class App extends Component {
             </div>
           )}
           {isTrue && (
-            <div className="ul">
-              {filteredList.map(each => (
+            <ul className="ul">
+              {newList.map(each => (
                 <li className="li" id={each.id} key={each.id}>
                   <div className={`initial-container ${each.classAdd}`}>
                     <p className="initial">{each.initial}</p>
@@ -239,7 +239,7 @@ class App extends Component {
                   </button>
                 </li>
               ))}
-            </div>
+            </ul>
           )}
         </div>
       </div>
