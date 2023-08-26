@@ -178,6 +178,7 @@ body {
   color: black;
   font-size: 9px;
   height: 34px;
+  outline:none;
 }
 .hr {
   color: white;
@@ -246,7 +247,8 @@ body {
   margin-right: 10px;
   height: 80px;
   width: 180px;
-  margin-bottom: 8px;
+  padding-bottom: 28px;
+  padding-left:6px;
 }
 .initial-container {
   height: 25px;
@@ -258,6 +260,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top:15px;
 }
 .initial {
   font-size: 9px;
@@ -282,11 +285,13 @@ body {
 .dButton {
   border: 0px solid transparent;
   height: 30px;
-  width: 40px;
+  width: 44px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: transparent;
   cursor: pointer;
+  margin-top:15px;
+  margin-left:12px;
 }
